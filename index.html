@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/dog.png">
+  </head>
+  <body>
+    <header>
+      <div>Meeting Minutes</div>
+      <nav>
+        <ul>
+          <li><a href="#Attendance-List">Attendance List</a></li>
+          <li><a href="#Agenda">Agenda</a></li>
+          <li><a href="#Meeting-Notes">Meeting Notes</a></li>
+          <li><u><span style="color:blue">blue</span></u></li>
+          <li><a href="#Presentations">Presentations</a></li>
+          <li><a href="#Recordings">Recordings</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <main>
+      <section>
+      <h1>CSE 110 Brainstorm</h1>
+      <h3>Discussing Banana Prices</h3>
+      <h3>10/10/22</h3>
+      </section>
+      <hr>
+      <h2 id="#Attendance-List">Attendance List</h2>
+      <details><summary>List</summary>
+        <ul>
+          <li>James</li>
+          <li>Paul</li>
+          <li><b><span style="color:green">Obama</span></b></li>
+          <li>Brandon</li>
+          <li><b><span style="color:blue">Professor Powell</span></b></li>
+          <li><b><span style="color:red">Chancellor Kholsa</span></b></li>
+        </ul>
+      </details>
+      <hr>
+      <h2 id="Agenda">Agenda</h2>
+      <h4>Last Meeting:</h4>
+        <p>In the last meeting we were discussing our goals and plans for this
+          quarter. We also breifly discussed some ideas we had for the project:
+        </p>
+        <ul>
+          <li>I</li>
+          <li>Don't</li>
+          <li>Know</li>
+        </ul>  
+      <hr>
+      <h4>This Meeting:</h4>
+        <p>In this meeting the plan is to continue discussing the project ideas
+          we went over last meeting. <strong>In a large bowl, sift together the
+          flour, baking powder, salt and suger.</strong> Lastly, and most
+          importantly, we will begin to discuss the <em>disturbing increase in
+          banana prices</em> throughout the United States and the rest of the world.
+        </p>
+      <hr>
+      <h2 id="Meeting-Notes">Meeting Notes</h2>
+        <h3>CSE 110 Project Ideas</h3>
+        <ol>
+          <li>Magnets</li>
+          <li>Automate Mail to Pepe Silvia</li>
+          <li>Carol from HR</li>
+        </ol>
+        <p>They began by finishing off where they left off last week which was 
+          in our brainstorming of potential project ideas. Chancellor Kholsa 
+          brought his favorite book, <i>Diary of a Wimpy Kid Dog Days</i>, and
+          we discussed the cultural relevance that is has to our project this 
+          quarter.</p>
+      <hr>
+      <h2>Comments/Questions</h2>
+        <ul>
+          <li>Paul mentioned he didnt understand the project ideas</li>
+          <li>Obama asked <button type="button">"Why?"</button></li>
+        </ul> 
+      <hr>
+      <h2 id="Presentations">Presentations</h2>
+      <video width="320" height="170" controls>
+        <source src="media/bananadiscussion.mp4" type="video/mp4">
+      </video>
+      <br>
+      <details>
+        <summary>Intense Negotiations</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting
+          attractions, international pavilions, award-winning fireworks and 
+          seasonal special events.
+        </p>
+      </details>
+      <br>
+      <img src="media/dog.png" alt="Dog" width="250" height="170">
+      <br>
+      <details>
+        <summary>dog</summary>
+        <p>This is my dog Zoe</p>
+      </details>
+      <br>
+      <hr>
+      <h2 id="Recordings">Recordings</h2>
+      <p>Video recording from the meeting:</p>
+      <video width="500" height="500" controls>
+        <source src="media/MeetingRecording.mp4" type="video/mp4">
+      </video>
+      <p>Audio Recording from the meeting:</p>
+      <audio controls loop>
+        <source src="media/MeetingAudio.mp3" type="audio/mpeg">
+      </audio>
+      <hr>
+    </main>
+    <footer>
+      <form> <!--We don't actually collect the responses-->
+        <fieldset>
+          <label for="comments">Comments/Questions:</label>
+          <br>
+          <textarea id="comments" name="comments" rows="4" cols="100">
+          </textarea>
+          <br>
+          <label for="survey">How likely are you to attend a meeting:</label>
+          <input list="surveys" name="survey" id="survey">
+          <datalist id="surveys">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+          </datalist>
+          <br>
+          <label for="numbers">Choose a number:</label>
+          <select name="numbers" id="numbers">
+            <option value="yes">no</option>
+            <option value="no">yes</option>
+            <option value="maybe">maybe</option>
+            <option value="five">7777777777777777</option>
+          </select>
+          <br>
+          <input type="checkbox" id="nextMeeting" name="nextMeeting" value="att">
+          <label for="nextMeeting"> Will you attend the next meeting?</label><br>
+          <label for="meetingDate">Next Meeting Date:</label>
+          <input type="date" id="meetingDate" name="nmd"
+            value="2022-10-11"
+            min="2022-10-11" max="2022-12-31">
+          <br>
+          <input type="radio" id="true" name="meetTime" value="TRUE">
+          <label for="true">TRUE</label><br>
+          <input type="radio" id="false" name="meetTime" value="FALSE">
+          <label for="false">FALSE</label><br>
+          <input type="radio" id="yes" name="meetTime" value="YES">
+          <label for="yes">YES</label><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <br>
+          <input type="submit" value="Submit">
+        </fieldset>
+        <br>
+      </form>
+    </footer>
+  </body>
+</html>
