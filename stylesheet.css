@@ -1,3 +1,45 @@
+* {
+    color: black;
+}
+
+a  {
+    color: blue;
+}
+
+a[href="#Agenda"] {
+    color: aqua;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style-type: disc;
+}
+
+li li {
+    list-style-type: circle;
+}
+
+span {
+    color: springgreen;
+}
+  
+div > span {
+    color: violet;
+}
+
+p ~ span {
+    background-color: yellowgreen;
+}
+
+h1 + h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
 .navbox { /* The navbox is for the navigation links*/
     display: inline-block;
     width: 150px;
@@ -49,6 +91,14 @@
     margin: 0px; 
     padding: 0px;
     border: 5px solid black;
+}
+
+.dogbox.dogbox2 {
+    width: 250px;
+    height: 170px;
+    margin: 0px; 
+    padding: 0px;
+    border: 5px solid thistle;
 }
 
 .recordingbox {
