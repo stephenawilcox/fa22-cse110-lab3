@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
     <title>Meeting Minutes</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="media/dog.png">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
     <header>
-      <div>Meeting Minutes</div>
-      <nav>
-        <ul>
-          <li><a href="#Attendance-List">Attendance List</a></li>
-          <li><a href="#Agenda">Agenda</a></li>
-          <li><a href="#Meeting-Notes">Meeting Notes</a></li>
-          <li><u><span style="color:blue">blue</span></u></li>
-          <li><a href="#Presentations">Presentations</a></li>
-          <li><a href="#Recordings">Recordings</a></li>
-        </ul>
-      </nav>
-      <hr>
+      <div class="navbox">Meeting Minutes
+        <nav>
+          <ul>
+            <li><a href="#Attendance-List">Attendance List</a></li>
+            <li><a href="#Agenda">Agenda</a></li>
+            <li><a href="#Meeting-Notes">Meeting Notes</a></li>
+            <li><u><span style="color:blue" id="bluelink">blue</span></u></li>
+            <li><a href="#Presentations">Presentations</a></li>
+            <li><a href="#Recordings">Recordings</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section>
@@ -28,11 +32,11 @@
       <h3>10/10/22</h3>
       </section>
       <hr>
-      <h2 id="#Attendance-List">Attendance List</h2>
+      <h2 id="Attendance-List">Attendance List</h2>
       <details><summary>List</summary>
         <ul>
           <li>James</li>
-          <li>Paul</li>
+          <li>Pablo</li>
           <li><b><span style="color:green">Obama</span></b></li>
           <li>Brandon</li>
           <li><b><span style="color:blue">Professor Powell</span></b></li>
@@ -42,7 +46,7 @@
       <hr>
       <h2 id="Agenda">Agenda</h2>
       <h4>Last Meeting:</h4>
-        <p>In the last meeting we were discussing our goals and plans for this
+        <p id="agendaP1">In the last meeting we were discussing our goals and plans for this
           quarter. We also breifly discussed some ideas we had for the project:
         </p>
         <ul>
@@ -52,7 +56,7 @@
         </ul>  
       <hr>
       <h4>This Meeting:</h4>
-        <p>In this meeting the plan is to continue discussing the project ideas
+        <p id="agendaP2">In this meeting the plan is to continue discussing the project ideas
           we went over last meeting. <strong>In a large bowl, sift together the
           flour, baking powder, salt and suger.</strong> Lastly, and most
           importantly, we will begin to discuss the <em>disturbing increase in
@@ -60,63 +64,79 @@
         </p>
       <hr>
       <h2 id="Meeting-Notes">Meeting Notes</h2>
-        <h3>CSE 110 Project Ideas</h3>
+        <h3 id="ideas">CSE 110 Project Ideas</h3>
         <ol>
           <li>Magnets</li>
           <li>Automate Mail to Pepe Silvia</li>
           <li>Carol from HR</li>
         </ol>
-        <p>They began by finishing off where they left off last week which was 
+        <p id="ideaP">The group began by finishing off where they left off last week which was 
           in our brainstorming of potential project ideas. Chancellor Kholsa 
-          brought his favorite book, <i>Diary of a Wimpy Kid Dog Days</i>, and
+          brought his favorite book, <i class="thin">Diary of a Wimpy Kid Dog Days</i>, and
           we discussed the cultural relevance that is has to our project this 
           quarter.</p>
       <hr>
       <h2>Comments/Questions</h2>
         <ul>
-          <li>Paul mentioned he didnt understand the project ideas</li>
+          <li>Pablo mentioned he didnt understand the project ideas</li>
           <li>Obama asked <button type="button">"Why?"</button></li>
-        </ul> 
+        </ul>
       <hr>
       <h2 id="Presentations">Presentations</h2>
-      <video width="320" height="170" controls>
-        <source src="media/bananadiscussion.mp4" type="video/mp4">
-      </video>
-      <br>
-      <details>
-        <summary>Intense Negotiations</summary>
-        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting
-          attractions, international pavilions, award-winning fireworks and 
-          seasonal special events.
-        </p>
-      </details>
-      <br>
-      <img src="media/dog.png" alt="Dog" width="250" height="170">
-      <br>
-      <details>
-        <summary>dog</summary>
-        <p>This is my dog Zoe</p>
-      </details>
-      <br>
+        <div class="presentations"> 
+          <div>
+            <video class="presbox" width="320" height="170" controls>
+              <source src="media/bananadiscussion.mp4" type="video/mp4">
+            </video>
+            <br>
+            <details>
+              <summary>Intense Negotiations</summary>
+              <p>Epcot is a theme park at Walt Disney World Resort featuring exciting
+                attractions, international pavilions, award-winning fireworks and 
+                seasonal special events.
+              </p>
+            </details>
+            <br>
+          </div>
+          <div>
+          <img class="dogbox" src="media/dog.png" alt="Dog" width="250" height="170">
+          <br>
+            <details>
+              <summary>dog</summary>
+                <p>This is my dog Zoe</p>
+            </details>
+          <br>
+          </div>
+          <div>
+            <img class="dogbox" src="media/dog.png" alt="Dog" width="250" height="170">
+            <br>
+              <details>
+                <summary>dog</summary>
+                  <p>This is my dog Zoe</p>
+              </details>
+            <br>
+            </div>
+        </div>
       <hr>
       <h2 id="Recordings">Recordings</h2>
       <p>Video recording from the meeting:</p>
-      <video width="500" height="280" controls>
+      <video class="recordingbox" width="500" height="280" controls>
         <source src="media/recording.mp4" type="video/mp4">
       </video>
       <p>Audio Recording from the meeting:</p>
-      <audio controls loop>
+      <audio class="audiobox" controls loop>
         <source src="media/MeetingAudio.mp3" type="audio/mpeg">
       </audio>
       <hr>
     </main>
     <footer>
       <form> <!--We don't actually collect the responses-->
-        <fieldset>
+        <fieldset class="surveybox">
           <label for="comments">Comments/Questions:</label>
           <br>
           <textarea id="comments" name="comments" rows="4" cols="100">
           </textarea>
+          <br>
           <br>
           <label for="survey">How likely are you to attend a meeting:</label>
           <input list="surveys" name="survey" id="survey">
@@ -152,10 +172,16 @@
           <label for="name">Name:</label>
           <input type="text" id="name" name="name">
           <br>
+          <br>
           <input type="submit" value="Submit">
         </fieldset>
         <br>
       </form>
+      <div class="gridbox">
+        <div>Created by Stephen Wilcox</div>
+        <div>For CSE 110 at UCSD</div>
+        <div>Lab 3</div>
+      </div> 
     </footer>
   </body>
 </html>

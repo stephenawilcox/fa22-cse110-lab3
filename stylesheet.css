@@ -1,0 +1,160 @@
+.navbox { /* The navbox is for the navigation links*/
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    margin-left: 5mm;
+    margin-right: 5mm;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #000000; 
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #000000;  
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #000000;
+    border-right-width: 5px;
+    border-right-style: solid;
+    border-right-color: #000000;
+    background-color: azure;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+.presentations {/* For ordering the presentations*/ 
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.presbox {
+    width: 320px;
+    height: 170px;
+    margin: 0px; 
+    padding: 0px;
+    border: 5px solid black;
+}
+
+.dogbox {
+    width: 250px;
+    height: 170px;
+    margin: 0px; 
+    padding: 0px;
+    border: 5px solid black;
+}
+
+.recordingbox {
+    width: 500px;
+    height: 280px;
+    margin: 0px; 
+    padding: 0px;
+    border: 5px solid black;
+    border-radius: 10%;
+}
+
+.audiobox {
+    width: 280px;
+    height: 40px;
+    margin: 0px; 
+    padding: 0px;
+    border: 5px solid black;
+    border-radius: 35%;
+}
+
+.textbox {
+    width: 300px;
+    height: 200px;
+    margin: 10px; 
+    padding: 25px;
+    border: 5px solid black;
+}
+
+.surveybox {
+    width: 40%;
+    height: 300px;
+    margin: 2%; 
+    padding: 1cm;
+    border: 5px solid black;
+    background-color: azure;
+    position: static;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px);
+    column-gap: 10px;
+    font-size: 10px;
+}
+
+strong {
+    font-size: 1.3em;
+}
+
+.thin {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    text-decoration-thickness: 1%;
+    font-size: 70%;
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+  }
+
+  h1 {
+    display: block;
+    color: rebeccapurple;
+    text-align: center;
+    font-size: 5vw;
+  }
+  h3 {
+    color: rgb(40, 5, 78);
+    margin-left: 20px;
+  }
+
+  #agendaP1 {
+    text-align: left;
+    max-width: 250mm;
+    color: hsl(0,100%,50%);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #agendaP2 {
+    text-align: left;
+    min-width: none;
+    color: hsl(0,100%,50%);
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  #Meeting-Notes {
+    text-align: center;
+    color: blueviolet;
+  }
+
+  #ideaP {
+    font-family: 'Lato', sans-serif;
+    
+  }
+
+  button:hover {
+    color: seagreen;
+  }
+
+  a:active {
+    background-color: blueviolet;
+  }
+
+  @media screen and (min-width: 25em) and (orientation: landscape) {
+
+  }
+ 
